@@ -150,7 +150,7 @@ async def dmraid(e):
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 counter = int(Mighty[0])
-                await e.reply("Dm Raid Strated Successfully !! ✅")
+                await e.reply("Dm Raid Started Successfully !! ✅")
                 for _ in range(counter):
                     reply = random.choice(RAID)
                     caption = f"{reply}"
