@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/3c7862aabb47bcd34ebac.jpg"width="350"" alt="MightyXSpam Logo">
+  <img src="https://telegra.ph/file/1cdd9fca98220e587c726.jpg"width="350"" alt="MightyXSpam Logo">
 </p>
 <h1 align="center">
   <b>⚠️ 𝘔𝘪𝘨𝘩𝘵𝘺 𝘟 𝘚𝘱𝘢𝘮 ⚠️</b>
@@ -25,7 +25,7 @@
 
 # Deploy To Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BeingMighty/MightyXSpam)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BeingMighty/MightySpam-deploy-)
 
 
 # ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs
