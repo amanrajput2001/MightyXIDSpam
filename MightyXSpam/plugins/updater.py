@@ -71,7 +71,7 @@ RESTARTING_APP = "restarting... heroku application"
 @Mig40.on(events.NewMessage(incoming=True, pattern=r"\%supdate(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in DEV:
-        text = "Updating Your MightyXSpamBots\n Type `.ping` After 5min To check I'm On !!"
+        text = "Updating Your MightyXSpamBots\nExecute Ping Command After Few Seconds To check I'm Alive !!"
         await e.reply(text, parse_mode=None, link_preview=None)
 
 
