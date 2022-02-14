@@ -92,7 +92,7 @@ async def ping(e):
 
 # ALIVE
 
-MIG_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/3c7862aabb47bcd34ebac.jpg"
+MIG_PIC = ALIVE_PIC if ALIVE_PIC else "https://te.legra.ph/file/01bfabe09c4b83fd2feed.jpg"
 
 
 mighty = "✧ 𝗠𝗶𝗴𝗵𝘁𝘆 𝗫 𝗦𝗽𝗮𝗺 𝗶𝘀 𝗛𝗲𝗿𝗲 ✧\n\n"
@@ -111,7 +111,7 @@ mighty += f"┣➣ **ᴄʜᴀɴɴᴇʟ** : [JOIN](https://t.me/MightyXUpdates)\n
 
 mighty += f"┗━━━━━━━━━━━━━━━━━━━\n\n"
 
-mighty += f"✨ [𝐑𝐄𝐏𝐎](https://github.com/BeingMighty/MightyXSpam) ✨"            
+mighty += f"✨ [𝐑𝐄𝐏𝐎](https://github.com/BeingMighty/MightyXIDSpam) ✨"            
                                     
 @Mig.on(events.NewMessage(incoming=True, pattern=r"\%salive" % hl))
 async def alive(event):
@@ -123,7 +123,7 @@ async def alive(event):
    
 # help
 
-HELP_PIC = "https://te.legra.ph/file/92b9751906f02175c5716.jpg"
+HELP_PIC = "https://te.legra.ph/file/01bfabe09c4b83fd2feed.jpg"
 
 MightyX = "🔥 𝗠𝗶𝗴𝗵𝘁𝘆 𝗫 𝗦𝗣𝗔𝗠 🔥\n\n"
  
