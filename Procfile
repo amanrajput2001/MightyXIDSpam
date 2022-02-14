@@ -1,1 +1,1 @@
-Riz: python -m MightyXSpam
+Mig: python -m MightyXSpam
