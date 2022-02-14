@@ -2,12 +2,12 @@
   <img src="https://telegra.ph/file/f6ea9ab7683ec1d5f8f57.jpg"width="350"" alt="MightyXSpam Logo">
 </p>
 <h1 align="center">
-  <b>⚠️ 𝘔𝘪𝘨𝘩𝘵𝘺 𝘟 𝘚𝘱𝘢𝘮 ⚠️</b>
+  <b>⚠️ 𝘔𝘪𝘨𝘩𝘵𝘺 𝘟 𝘐𝘋 𝘚𝘱𝘢𝘮 ⚠️</b>
 </h1>
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FBeingMighty%2FMightyXSpam&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=true)](https://github.com/BeingMighty/MightyXSpam)
-[![Forks](https://img.shields.io/github/forks/BeingMighty/MightyXSpam?style=flat-square&color=blue)](https://github.com/BeingMighty/MightyXSpam/fork)
-![Repo Size](https://img.shields.io/github/repo-size/BeingMighty/MightyXSpam?&color=limegreen&style=flat-square&logo=github)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FBeingMighty%2FMightyXIDSpam&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=true)](https://github.com/BeingMighty/MightyXIDSpam)
+[![Forks](https://img.shields.io/github/forks/BeingMighty/MightyXIDSpam?style=flat-square&color=blue)](https://github.com/BeingMighty/MightyXIDSpam/fork)
+![Repo Size](https://img.shields.io/github/repo-size/BeingMighty/MightyXIDSpam?&color=limegreen&style=flat-square&logo=github)
 [![Python](https://img.shields.io/badge/Python-v3.9.7-blue?style=flat-square)](https://www.python.org/)
 
 ----
@@ -25,7 +25,7 @@
 
 # Deploy To Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BeingMighty/MightySpam-deploy-)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BeingMighty/MightyIDSpam-deploy-)
 
 
 # ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs
