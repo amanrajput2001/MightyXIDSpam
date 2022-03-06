@@ -4,20 +4,23 @@ import random
 from os import execl
 import asyncio
 import telethon.utils
+from requests import get
 from MightyXSpam import Mig, Mig2, Mig3, Mig4, Mig5 , Mig6, Mig7, Mig8, Mig9, Mig10, Mig11, Mig12, Mig13, Mig14, Mig15, Mig16, Mig17, Mig18, Mig19, Mig20, Mig21, Mig22, Mig23, Mig24, Mig25, Mig26, Mig27, Mig28, Mig29, Mig30, Mig31, Mig32, Mig33, Mig34, Mig35, Mig36, Mig37, Mig38, Mig39, Mig40, DEV
 from .. import CMD_HNDLR as hl
-from telethon.tl import functions
+from telethon.tl import functions, types
 from telethon import events
+ 
+ 
+from telethon.errors import (ChannelInvalidError, ChannelPrivateError, ChannelPublicGroupNaError, InviteHashEmptyError, InviteHashExpiredError, InviteHashInvalidError)
+from telethon.events import NewMessage
+from telethon.tl.types import Channel, Chat, User
+from telethon.tl.functions.channels import GetFullChannelRequest, InviteToChannelRequest, GetParticipantsRequest
+from telethon.errors import FloodWaitError
+from telethon.tl.functions.messages import GetHistoryRequest, CheckChatInviteRequest, GetFullChatRequest
+from telethon.errors.rpcerrorlist import YouBlockedUserError
+from urllib.error import HTTPError
 
 
-from telethon.errors import (
-    ChannelInvalidError,
-    ChannelPrivateError,
-    ChannelPublicGroupNaError,
-)
-from telethon.tl import functions
-from telethon.tl.functions.channels import GetFullChannelRequest, InviteToChannelRequest
-from telethon.tl.functions.messages import GetFullChatRequest
 
 async def get_chatinfo(event):
     chat = event.pattern_match.group(1)
@@ -40,21 +43,27 @@ async def get_chatinfo(event):
         try:
             chat_info = await event.client(GetFullChannelRequest(chat))
         except ChannelInvalidError:
-            await event.reply("`Invalid channel/group`")
+            await event.reply("`Invalid Channel/Group`")
             return None
         except ChannelPrivateError:
-            await event.reply(
-                "`This is a private channel/group or I am banned from there`"
-            )
+            await event.reply("`This is a Private Channel/Group or I Am Banned From There`")
             return None
         except ChannelPublicGroupNaError:
-            await event.reply("`Channel or supergroup doesn't exist`")
+            await event.reply("`Channel or Supergroup Doesn't Exist`")
             return None
-        except (TypeError, ValueError):
-            await event.reply("`Invalid channel/group`")
+        except (TypeError, ValueError) as err:
+            await event.reply("`Invalid Channel/Group`")
             return None
-    return chat_info      
-    
+    return chat_info
+
+
+
+def user_full_name(user):
+    names = [user.first_name, user.last_name]
+    names = [i for i in list(names) if i]
+    full_name = ' '.join(names)
+    return full_name
+
             
 @Mig.on(events.NewMessage(incoming=True, pattern=r"\%sinviteall(?: |$)(.*)" % hl))
 @Mig2.on(events.NewMessage(incoming=True, pattern=r"\%sinviteall(?: |$)(.*)" % hl))
@@ -97,37 +106,33 @@ async def get_chatinfo(event):
 @Mig39.on(events.NewMessage(incoming=True, pattern=r"\%sinviteall(?: |$)(.*)" % hl))
 @Mig40.on(events.NewMessage(incoming=True, pattern=r"\%sinviteall(?: |$)(.*)" % hl))
 async def get_users(event):
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗜𝗻𝘃𝗶𝘁𝗲𝗔𝗹𝗹\n\nCommand:\n\n.inviteall <group username/id/link>"
     if event.sender_id in DEV:
         Nobi = event.text[11:]
         Mighty = Nobi.lower()
-        restricted = ["@MightyXSupport", "@MightyXUpdates"]
-        migx = await event.reply("__Inviting members... __")
+        migx = await event.reply("__Processing...__🌚")
         if Mighty in restricted:
-            await migx.edit("You Can't Invite Members From There.")
-            await event.client.send_message(-1001451242105, "Sorry for inviting members from here.")
+            await migx.edit("You Can't Invite Members From There !!")
+            await event.client.send_message(-1001644444780, "Sorry For Inviting Members From Here.")
             return
         mightyxspam = await get_chatinfo(event)
         chat = await event.get_chat()
         if event.is_private:
-            return await migx.edit("`Sorry, Can't add users here`")
+            return await migx.edit("`Sorry, Can't Add Users Here !!`")
         s = 0
         f = 0
         error = "None"
-        await migx.edit("**INVITING USERS !!**")
+        await migx.edit("**Terminal Status**\n\n`Collecting Users..!! ✨`")
         async for user in event.client.iter_participants(mightyxspam.full_chat.id):
             try:
                 await event.client(
                     InviteToChannelRequest(channel=chat, users=[user.id])
                 )
                 s += 1
-                await migx.edit(
-                    f"**INVITING USERS.. **\n\n**Invited :**  `{s}` Users \n**Failed to Invite :**  `{f}` Users.\n\n**Error :**  `{error}`"
-            )
+                await migx.edit(f"**Terminal Running...**\n\n🎉 Invited `{s}` People \n⚠️ Failed To Invite `{f}` People\n\n**‼️LastError :** `{error}`")
             except Exception as e:
                 error = str(e)
                 f += 1
-        return await migx.edit(
-        f"**INVITING FINISHED** \n\n**Invited :**  `{s}` Users \n**Failed :**  `{f}` Users."
-    )
-
-
+        return await migx.edit(f"**Terminal Finished** \n\n✨ Successfully Invited `{s}` People \n❌ Failed To Invite `{f}` People")
+ 
+ 
