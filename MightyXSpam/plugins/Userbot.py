@@ -1,5 +1,5 @@
-# Mighty X Spam - Spam Userbots
-# © 2021 - 2022 - RiZoeLX
+# Mighty X Spam - Spam Userbots 
+# @MightyXSpam
 
 import os
 import sys
@@ -131,7 +131,7 @@ MightyX += f"__ᴄᴍᴅs ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴍɪɢʜᴛʏ x sᴘᴀ�
 
 MightyX += f" ↧ 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙲𝙼𝙳𝚂 ↧\n\n"
 
-MightyX += f" `.ping` - `.alive` - `.setname` - `.setbio` - `.inviteall` - .`restart` - `.update` - `.stats` - `.addsudo` \n\n"
+MightyX += f" `.ping` - `.alive` - `.setpic` - `.delpic` - `.setname` - `.setbio` - `.inviteall` - .`restart` - `.update` - `.stats` - `.addsudo` \n\n"
  
 MightyX += f" ↧ 𝙹𝙾𝙸𝙽/𝙻𝙴𝙰𝚅𝙴 𝙲𝙼𝙳𝚂 ↧\n\n"
 
