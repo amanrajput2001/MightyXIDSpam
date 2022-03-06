@@ -15,7 +15,7 @@
 - ➥ ⚡ ғᴀsᴛ ᴀɴᴅ sᴛᴀʙʟᴇ ⚡
 - ➥ Deploy Upto 40 UserBots in One Time🔥
 - ➥ Dm Spam / Raid
-- ➥ PornSpam 🤓
+- ➥ PormSpam 🤓
 - ➥ You Can Also Add Members Using Spam Bots
 
 
@@ -45,3 +45,4 @@
 * [Lonami](https://github.com/LonamiWebs/) for [Telethon.](https://github.com/LonamiWebs/Telethon)
 
 </details>
+
