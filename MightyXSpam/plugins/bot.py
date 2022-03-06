@@ -1,11 +1,22 @@
+# Mighty X Spam !! || @MightyXSpam
+# Kang With Credits Else Gay Confirmed ✓
+
 import asyncio
 import os
 from pathlib import Path
 import base64
+from asyncio import sleep
+import telethon.utils
+from telethon.errors.rpcerrorlist import MessageDeleteForbiddenError
+from telethon.tl.custom import Message
+from telethon.tl.types import MessageService
 from telethon.errors.rpcerrorlist import UsernameOccupiedError
 from telethon.tl import functions
+from telethon.tl.functions.account import UpdateProfileRequest
+from telethon.tl.functions.photos import DeletePhotosRequest, UploadProfilePhotoRequest, GetUserPhotosRequest
 from telethon.tl.functions.account import UpdateUsernameRequest
 from MightyXSpam import Mig, Mig2, Mig3, Mig4, Mig5 , Mig6, Mig7, Mig8, Mig9, Mig10, Mig11, Mig12, Mig13, Mig14, Mig15, Mig16, Mig17, Mig18, Mig19, Mig20, Mig21, Mig22, Mig23, Mig24, Mig25, Mig26, Mig27, Mig28, Mig29, Mig30, Mig31, Mig32, Mig33, Mig34, Mig35, Mig36, Mig37, Mig38, Mig39, Mig40, DEV
+from MightyXSpam.utils import edit_or_reply
 from .. import CMD_HNDLR as hl
 from telethon import events
 from telethon.tl.types import Channel, Chat, InputPhoto, User
@@ -211,4 +222,153 @@ async def stats(event):
         await event.edit(mighty)    
     
     
-    
+#setpic
+
+@Mig.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig2.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig3.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig4.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig5.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig6.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig7.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig8.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig9.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig10.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig11.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig12.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig13.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig14.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig15.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig16.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig17.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig18.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig19.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig20.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig21.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig22.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig23.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig24.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig25.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig26.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig27.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig28.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig29.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig30.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig31.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig32.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig33.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig34.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig35.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig36.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig37.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig38.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig39.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+@Mig40.on(events.NewMessage(incoming=True, pattern=r"\%ssetpic(?: |$)(.*)" % hl))
+async def pfp(event):
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗖𝗛𝗔𝗡𝗚𝗘 𝗣𝗜𝗖\n\nCommand:\n\n.setpic <reply to media> to change pfp of spam ids>"
+    reply_message = await event.get_reply_message()
+    event = await event.respond("`Downloading Media...`")
+    photo = None
+    try:
+        photo = await event.client.download_media(reply_message)
+    except Exception as e:
+        await event.edit(str(e))
+    else:
+        if photo:
+            await event.edit("`Now, Uploading to Telegram...`")
+            if photo.endswith((".mp4", ".MP4")):
+                size = os.stat(photo).st_size
+                if size > 2097152:
+                    await event.edit("`Size Must Be Less Than 2 MB !!`")
+                    os.remove(photo)
+                    return
+                pic = None
+                video = await event.client.upload_file(photo)
+            else:
+                pic = await event.client.upload_file(photo)
+                video = None
+            try:
+                await event.client(
+                    functions.photos.UploadProfilePhotoRequest(
+                        file=pic, video=video, video_start_ts=0.01
+                    )
+                )
+            except Exception as e:
+                await event.edit(f"**Error :**\n`{e}`")
+            else:
+                await event.edit("Changed Profile Photo Successfully !! ✅")
+    try:
+        os.remove(photo)
+    except Exception as e:
+        LOGS.info(str(e))
+
+
+
+#delpic
+
+
+@Mig.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig2.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig3.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig4.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig5.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig6.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig7.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig8.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig9.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig10.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig11.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig12.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig13.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig14.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig15.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig16.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig17.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig18.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig19.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig20.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig21.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig22.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig23.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig24.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig25.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig26.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig27.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig28.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig29.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig30.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig31.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig32.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig33.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig34.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig35.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig36.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig37.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig38.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig39.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+@Mig40.on(events.NewMessage(incoming=True, pattern=r"\%sdelpic(?: |$)(.*)" % hl))
+async def remove_profilepic(delpfp):
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗘𝗟𝗘𝗧𝗘 𝗣𝗜𝗖\n\nCommand:\n\n.delpic <number/all> to delete pfp of spam ids>"
+    botme = await delpfp.client.get_me()
+    botid = telethon.utils.get_peer_id(botme) 
+    group = delpfp.text[8:]
+    if group == "all":
+        lim = 0
+    elif group.isdigit():
+        lim = int(group)
+    else:
+        lim = 1
+    pfplist = await delpfp.client(
+        GetUserPhotosRequest(user_id=botid, offset=0, max_id=0, limit=lim)
+    )
+    input_photos = [
+        InputPhoto(
+            id=sep.id,
+            access_hash=sep.access_hash,
+            file_reference=sep.file_reference,
+        )
+        for sep in pfplist.photos
+    ]
+    await delpfp.client(DeletePhotosRequest(id=input_photos))
+    await delpfp.reply(f"Successfully Deleted {len(input_photos)} Profile Photo(s) !! ✅")
+
