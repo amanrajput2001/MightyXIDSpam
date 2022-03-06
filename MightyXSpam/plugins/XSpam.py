@@ -52,16 +52,16 @@ async def spam(e):
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
-        Migoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        Mighty = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
-        if len(Migoel) == 2:
-            message = str(Migoel[1])
-            counter = int(Migoel[0])
+        if len(Mighty) == 2:
+            message = str(Mighty[1])
+            counter = int(Mighty[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None)
             await asyncio.wait([e.respond(message) for i in range(counter)])
         elif e.reply_to_msg_id and smex.media:
-            counter = int(Migoel[0])
+            counter = int(Mighty[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None)
             for _ in range(counter):
@@ -69,7 +69,7 @@ async def spam(e):
                 await gifspam(e, smex)
         elif e.reply_to_msg_id and smex.text:
             message = smex.text
-            counter = int(Migoel[0])
+            counter = int(Mighty[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None)
             await asyncio.wait([e.respond(message) for i in range(counter)])
@@ -161,12 +161,12 @@ async def spam(e):
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
         smex = await e.get_reply_message()
-        Migoel = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
-        Migoelsexy = Migoel[1:]
-        if len(Migoelsexy) == 2:
-            message = str(Migoelsexy[1])
-            counter = int(Migoelsexy[0])
-            sleeptime = float(Migoel[0])
+        Mighty = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
+        Mightysexy = Mighty[1:]
+        if len(Mightysexy) == 2:
+            message = str(Mightysexy[1])
+            counter = int(Mightysexy[0])
+            sleeptime = float(Mighty[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     if e.reply_to_msg_id:
@@ -175,8 +175,8 @@ async def spam(e):
                         await e.client.send_message(e.chat_id, message)
                     await asyncio.sleep(sleeptime)
         elif e.reply_to_msg_id and smex.media:
-            counter = int(Migoelsexy[0])
-            sleeptime = float(Migoel[0])
+            counter = int(Mightysexy[0])
+            sleeptime = float(Mighty[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "document"):
                     smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
@@ -184,8 +184,8 @@ async def spam(e):
                 await asyncio.sleep(sleeptime)
         elif e.reply_to_msg_id and smex.text:
             message = smex.text
-            counter = int(Migoelsexy[0])
-            sleeptime = float(Migoel[0])
+            counter = int(Mightysexy[0])
+            sleeptime = float(Mighty[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, message)
@@ -221,10 +221,10 @@ async def spam(e):
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         mighty = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 2)
-        Migoelsexy = mighty[1:]
+        Mightysexy = mighty[1:]
         smex = await e.get_reply_message()
-        if len(Migoelsexy) == 2:
-            user = str(Migoelsexy[0])
+        if len(Mightysexy) == 2:
+            user = str(Mightysexy[0])
             a = await e.client.get_entity(user)
             g = a.id
             if int(g) in MightyX:
@@ -234,7 +234,7 @@ async def spam(e):
                 text = f"This Guy is a Sudo User."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
-                message = str(Migoelsexy[1])
+                message = str(Mightysexy[1])
                 counter = int(mighty[0])
                 await e.reply("😈 Dm Spam Started 😈")
                 for _ in range(counter):
@@ -242,7 +242,7 @@ async def spam(e):
                         await e.client.send_message(g, message)
                         await asyncio.sleep(0.3)
         elif e.reply_to_msg_id and smex.media:
-            user = str(Migoelsexy[0])
+            user = str(Mightysexy[0])
             a = await e.client.get_entity(user)
             g = a.id
             if int(g) in MightyX:
@@ -261,7 +261,7 @@ async def spam(e):
                         await asyncio.sleep(0.3)  
         elif e.reply_to_msg_id and smex.text:
             message = smex.text
-            user = str(Migoelsexy[0])
+            user = str(Mightysexy[0])
             a = await e.client.get_entity(user)
             g = a.id
             if int(g) in MightyX:
