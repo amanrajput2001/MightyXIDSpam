@@ -86,7 +86,7 @@ async def ping(e):
         start = datetime.now()
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        pingop = f"█▀█ █▀█ █▄░█ █▀▀\n█▀▀ █▄█ █░▀█ █▄█\n\nϟ Mighty X Spam ϟ︎ `{ms}` ᴍs"                   
+        pingop = f"█▀█ █▀█ █▄░█ █▀▀\n█▀▀ █▄█ █░▀█ █▄█\n\nϟ Aman X Spam ϟ︎ `{ms}` ᴍs"                   
         await fuk.edit(pingop)
 
 
