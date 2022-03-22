@@ -61,7 +61,7 @@ async def _(e):
             a = await e.client.get_entity(user)
             g = a.id
             if int(g) in MightyX:
-                text = f"I can't abuse MightyX's Owner"
+                text = f"I can't abuse  Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
                 text = f"This Guy is a Sudo User."
