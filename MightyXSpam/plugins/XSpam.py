@@ -228,7 +228,7 @@ async def spam(e):
             a = await e.client.get_entity(user)
             g = a.id
             if int(g) in MightyX:
-                text = f"I can't Dm To MightyX's Owner"
+                text = f"I can't Dm To AMAN X SPAM'S Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
                 text = f"This Guy is a Sudo User."
@@ -246,7 +246,7 @@ async def spam(e):
             a = await e.client.get_entity(user)
             g = a.id
             if int(g) in MightyX:
-                text = f"I can't Dm To MightyX's Owner"
+                text = f"I can't Dm To  Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
                 text = f"This Guy is a Sudo User."
@@ -265,7 +265,7 @@ async def spam(e):
             a = await e.client.get_entity(user)
             g = a.id
             if int(g) in MightyX:
-                text = f"I can't Dm To MightyX's Owner"
+                text = f"I can't Dm To AMAN X SPAM'S Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
                 text = f"This Guy is a Sudo User."
