@@ -213,7 +213,7 @@ async def stats(event):
             else:
                 print(d)
          
-        mighty += f"**HERE IS YOUR MightyXSpam STATS**\n\n"
+        mighty += f"**HERE IS YOUR AMANXSPAM'S STATS**\n\n"
         mighty += f"`Users :`\t**{u}**\n"
         mighty += f"`Groups :`\t**{g}**\n"
         mighty += f"`Super Groups :`\t**{c}**\n"
