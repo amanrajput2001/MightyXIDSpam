@@ -211,7 +211,7 @@ async def _(e):
             user_idd = a.id
             user_id = int(user_idd)
             if int(user_id) in MightyX:
-                text = f"Can't raid on MightyX's Owner."
+                text = f"Can't raid on  Owner."
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) in SUDO_USERS:
                 text = f"This Guy is a Sudo User."
