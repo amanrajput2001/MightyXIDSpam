@@ -103,15 +103,15 @@ mighty += f"┣➣ **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
 
 mighty += f"┣➣ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
 
-mighty += f"┣➣ **ᴍɪɢʜᴛʏXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{mightyversion}`\n"
+mighty += f"┣➣ **ᴀᴍᴀɴxsᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{mightyversion}`\n"
     
-mighty += f"┣➣ **sᴜᴘᴘᴏʀᴛ** : [JOIN](https://t.me/MightyXSupport)\n"
+mighty += f"┣➣ **sᴜᴘᴘᴏʀᴛ** : [JOIN✨](https://t.me/SOUL_ARMY_0P)\n"
 
-mighty += f"┣➣ **ᴄʜᴀɴɴᴇʟ** : [JOIN](https://t.me/MightyXUpdates)\n"
+mighty += f"┣➣ **ᴄʜᴀɴɴᴇʟ** : [JOIN✨](https://t.me/itsamanrajput)\n"
 
 mighty += f"┗━━━━━━━━━━━━━━━━━━━\n\n"
 
-mighty += f"✨ [𝐑𝐄𝐏𝐎](https://github.com/BeingMighty/MightyXIDSpam) ✨"            
+mighty += f"✨ [𝐑𝐄𝐏𝐎](https://te.legra.ph/file/7ca878a87eb74e36254c7.jpg) ✨"            
                                     
 @Mig.on(events.NewMessage(incoming=True, pattern=r"\%salive" % hl))
 async def alive(event):
@@ -123,11 +123,11 @@ async def alive(event):
    
 # help
 
-HELP_PIC = "https://te.legra.ph/file/01bfabe09c4b83fd2feed.jpg"
+HELP_PIC = "https://te.legra.ph/file/ba12e2a3ed03ae3bcef0f.jpg"
 
-MightyX = "🔥 𝗠𝗶𝗴𝗵𝘁𝘆 𝗫 𝗦𝗣𝗔𝗠 🔥\n\n"
+MightyX = "💣 ᴀᴍᴀɴXsᴘᴀᴍ 💣\n\n"
  
-MightyX += f"__ᴄᴍᴅs ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴍɪɢʜᴛʏ x sᴘᴀᴍ__\n\n"
+MightyX += f"__ᴄᴍᴅs ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴀᴍᴀɴ x sᴘᴀᴍ__\n\n"
 
 MightyX += f" ↧ 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙲𝙼𝙳𝚂 ↧\n\n"
 
@@ -145,9 +145,9 @@ MightyX += f" 𝙳𝙼 / 𝙴𝚌𝚑𝚘 𝙲𝚖𝚍𝚜 \n\n"
 
 MightyX += f" `.dm` - `.dmraid` - `.dmspam` \n\n `.addecho` - `.rmecho` \n\n"
 
-MightyX += f"All Cmds Uploaded : [• HERE •](https://t.me/ResourceXD/2) \n\n"
+MightyX += f"If want more help  : [• MSG ME •](https://t.me/itzamanrajput) \n\n"
  
-MightyX += f"@MightyXUpdates | @MightyXSupport\n"
+MightyX += f"@SOUL_ARMY_0P | @itzamanrajput\n"
 
 
 @Mig.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
